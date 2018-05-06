@@ -1,0 +1,7 @@
+/* SQL challange from Khan Academy */
+
+SELECT seq.title as movie, main.title as sequel
+    FROM movies seq
+    LEFT OUTER JOIN movies main
+    ON seq.sequel_id = main.id
+    ;
